@@ -25,42 +25,45 @@
   
   /* Header Styling */
   header {
-    text-align: center;
     margin-bottom: 20px;
   }
   
   header h1 {
     font-size: 2.5em;
     color: #333;
+    text-align: center;
   }
-  
+   
   .profession {
-    font-style: italic;
-    color: #777;
+    font-size: 30px;
+    color: #0f40e2;
+    text-align: center;
   }
   
   .contact {
     margin-top: 10px;
   }
   
-  .contact a {
+  .contact ul li {    
     text-decoration: none;
-    color: #2c3e50;
+    color: #265788;
     margin-right: 10px;
+    margin-left: 30px;
+    list-style-type: disc;
   }
   
   .contact a:hover {
-    text-decoration: underline;
+    text-decoration-color: teal;
   }
   
   /* Section Styling */
   section {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   h2 {
     font-size: 1.8em;
-    color: #2c3e50;
+    color: #09a2ad;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -68,18 +71,25 @@
   
   h3 {
     font-size: 1.4em;
-    color: #34495e;
+    color: #0f40e2;
+  }
+  h4 {
+    font-size: 1.2em;
+    color: #0f40e2;
+    margin-bottom: 10px;
   }
   
   /* Education and Experience */
   .education-item, .experience-item {
     margin-bottom: 15px;
+    
   }
   
   .education-item p, .experience-item p {
     color: #555;
     font-size: 1em;
     margin-top: 5px;
+    margin-left: 130px ;
   }
   
   .education-item ul, .experience-item ul {
@@ -89,6 +99,7 @@
   .education-item li, .experience-item li {
     list-style-type: square;
     margin-bottom: 5px;
+    margin-left: 100px ;
   }
   
   .skills ul, .languages ul {
@@ -98,5 +109,35 @@
   .skills li, .languages li {
     list-style-type: circle;
     margin-bottom: 5px;
+    margin-left: 100px ;
+    
+  }
+  
+
+  @media (max-width: 768px) {
+    .cv-container {
+      padding: 10px;
+    }
+  
+    header h1 {
+      font-size: 2em;
+    }
+  
+    .contact a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    section {
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 1.6em;
+    }
+  
+    h3 {
+      font-size: 1.2em;
+    }
   }
   
